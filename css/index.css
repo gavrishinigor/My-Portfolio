@@ -1,0 +1,106 @@
+body, html {
+    min-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.header__container {
+    width: 1400px;
+    height: 100px;
+    padding-top: 20px;
+}
+
+.header__container {
+    font-size: 30px;
+    text-align: center;
+}
+
+.main {
+    max-width: 100%;
+    height: auto;
+    display: inline-flex;
+}
+
+.about-me {
+    width: 350px;
+    height: auto;
+    top: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
+    border-radius: 15px;
+    background-color: rgb(106, 106, 103);
+    box-shadow: 15px 10px 15px rgb(11, 10, 10);
+}
+
+.about-me img {
+    width: 350px;
+    border-radius: 15px;
+    background-position: 50% 50%;
+}
+
+.my-works {
+    width: 1000px;
+    top: 25px;
+}
+
+.my-works::before {
+    content: "Примеры моих работ";
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 300px;
+    font-size: 30px;
+    line-height: 44px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+.container {
+    width: 800px;
+    height: 400px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.metrica img {
+    max-width: 100%;
+    min-height: 100%;
+    background-position: 50% 50%;
+    border-radius: 15px;
+    box-shadow: 15px 10px 15px rgb(11, 10, 10);
+}
+    
+.portfolio img {
+    min-width: 100%;
+    max-height:100%;
+    background-position: 50% 50%;
+    border-radius: 15px;
+    box-shadow: 15px 10px 15px rgb(11, 10, 10);
+}
+
+.continue img {
+    min-width:100%;
+    max-height: 100%;
+    background-position: 50% 50%;
+    border-radius: 15px;
+    box-shadow: 15px 10px 15px rgb(11, 10, 10);
+}
+
+.metrica {
+    margin-left: 50px;
+}
+
+.portfolio {
+    margin-left: 200px;
+}
+
+.continue {
+    margin-left: 50px;
+}
+
+
+
+.footer__container {
+    width: 1400px;
+    height: 100px;
+}

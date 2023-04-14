@@ -4,15 +4,16 @@ body, html {
     box-sizing: border-box;
 }
 
-.header__container {
-    width: 1400px;
-    height: 100px;
-    padding-top: 20px;
+.header {
+    
 }
 
 .header__container {
     font-size: 30px;
     text-align: center;
+    width: 1400px;
+    height: 100px;
+    padding-top: 20px;
 }
 
 .main {

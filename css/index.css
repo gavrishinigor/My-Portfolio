@@ -1,7 +1,7 @@
 body, html {
     min-width: 1400px;
     margin: 0 auto;
-    box-sizing: border-box;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
 }
 
 .header {
@@ -17,15 +17,14 @@ body, html {
 }
 
 .main {
-    max-width: 100%;
-    height: auto;
-    display: inline-flex;
+    min-width: 100%;
+    display: flex;
 }
 
 .about-me {
     width: 350px;
-    height: auto;
-    top: 25px;
+    /* height: auto; */
+    margin-top: 25px;
     margin-right: 25px;
     margin-left: 25px;
     border-radius: 15px;
@@ -33,15 +32,37 @@ body, html {
     box-shadow: 15px 10px 15px rgb(11, 10, 10);
 }
 
-.about-me img {
+.my-pfoto {
     width: 350px;
     border-radius: 15px;
-    background-position: 50% 50%;
+}
+
+.A-few-details-about-myself {
+    margin: 3%;
+    font-size: 22px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.telegram-link {
+    width: 100px;
+    height: 25px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    margin-left: 10px;
+    border-radius: 2px;
+    color: rgb(60, 104, 143);
+    background-color: #fff;
 }
 
 .my-works {
     width: 1000px;
-    top: 25px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 .my-works::before {
@@ -63,43 +84,31 @@ body, html {
     margin-bottom: 50px;
 }
 
-.metrica img {
-    max-width: 100%;
-    min-height: 100%;
-    background-position: 50% 50%;
-    border-radius: 15px;
-    box-shadow: 15px 10px 15px rgb(11, 10, 10);
-}
-    
-.portfolio img {
-    min-width: 100%;
-    max-height:100%;
+.photo-cover {
+    width:800px;
+    height: 100%;
     background-position: 50% 50%;
     border-radius: 15px;
     box-shadow: 15px 10px 15px rgb(11, 10, 10);
 }
 
-.continue img {
-    min-width:100%;
-    max-height: 100%;
-    background-position: 50% 50%;
-    border-radius: 15px;
-    box-shadow: 15px 10px 15px rgb(11, 10, 10);
-}
-
-.metrica {
+.container_Website-Metrica {
+    background-image: url(../resourses/Metrica.jpg);
+    background-size: cover;
     margin-left: 50px;
 }
 
-.portfolio {
+.container_Portfolio-ORLOV {
     margin-left: 200px;
 }
 
-.continue {
+.container_Metrica-adaptive {
     margin-left: 50px;
 }
 
-
+.container_to-be-continued{
+    margin-left: 200px;
+}
 
 .footer__container {
     width: 1400px;

@@ -1,0 +1,29 @@
+.nav__wrapper {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+}
+
+.logo {
+    width: 90px;
+    height: 60px;
+    margin-left: 50px;
+    margin-right: 400px;
+    object-fit: cover;
+}
+
+.header__nav {
+    width: 100%;
+    display: flex;
+    gap: 80px;
+}
+
+.nav__link {
+    text-transform: uppercase;
+    display: block;
+    cursor: pointer;
+    color: #b4afaf;
+    align-items: center;
+}

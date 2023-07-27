@@ -1,0 +1,24 @@
+.about-me__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.discriptions {
+    width: 45%;
+    padding-top: 200px;
+    padding-left: 50px;
+}
+
+.disc {
+    color: #b4afaf;
+}
+
+.my-pfoto {
+    height: 100vh;
+    margin-right: 50px;
+}
+
+p {
+    color: aliceblue;
+    font-size: 32px;
+}

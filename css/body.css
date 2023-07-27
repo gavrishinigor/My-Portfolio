@@ -1,29 +1,34 @@
-body, html {
-    min-width: 1400px;
+html {
+   font-family: 'Indie Flower', cursive;;
+   font-weight: 700;
+   background-color: #000;
+}
+
+.container {
+    width: 1440px;
+    padding: 0 20px;
     margin: 0 auto;
-    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
 }
 
 .header {
     
 }
 
-.header__container {
+/* .header__container {
     font-size: 30px;
     text-align: center;
     width: 1400px;
     height: 100px;
     padding-top: 20px;
-}
+} */
 
-.main {
+/* .main {
     min-width: 100%;
     display: flex;
 }
 
 .about-me {
     width: 350px;
-    /* height: auto; */
     margin-top: 25px;
     margin-right: 25px;
     margin-left: 25px;
@@ -77,12 +82,6 @@ body, html {
     margin-left: 50px;
 }
 
-.container {
-    width: 800px;
-    height: 400px;
-    cursor: pointer;
-    margin-bottom: 50px;
-}
 
 .photo-cover {
     width:800px;
@@ -106,11 +105,11 @@ body, html {
     margin-left: 50px;
 }
 
-.container_to-be-continued{
+.container_to-be-continued {
     margin-left: 200px;
 }
 
 .footer__container {
     width: 1400px;
     height: 100px;
-}
+} */

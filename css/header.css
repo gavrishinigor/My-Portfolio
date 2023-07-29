@@ -1,5 +1,4 @@
 .nav__wrapper {
-    width: 100%;
     padding: 50px 0;
     display: flex;
     position: absolute;
@@ -24,6 +23,14 @@
     text-transform: uppercase;
     display: block;
     cursor: pointer;
-    color: #b4afaf;
     align-items: center;
+}
+
+.nav__link a {
+    text-decoration: none;
+    color: #b4afaf;
+}
+
+a:hover {
+    text-shadow: 1px 1px 3px rgb(236, 99, 7);
 }

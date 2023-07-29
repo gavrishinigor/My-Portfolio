@@ -8,21 +8,28 @@
     <link rel="stylesheet" href="./css/body.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/about-me.css">
+    <link rel="stylesheet" href="./css/gallery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Shantell+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
     <title>Portfolio Gavrishin Igor</title>
 </head>
 <body>
     <div class="header">
         <div class="container header__container">
             <div class="nav__wrapper">
-                <img class="logo" src="./resourses/123.jpg" alt="">
-                <li class="header__nav">
-                    <ul class="nav__link">Обо мне</ul>
-                    <ul class="nav__link">Мои работы</ul>
-                    <ul class="nav__link">контакты</ul>
-                </li>
+                <img class="logo" src="./resources/123.jpg" alt="">
+                <ul class="header__nav">
+                    <li class="nav__link">
+                        <a href="">Обо мне</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="">Мои работы</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="">контакты</a>
+                    </li>
+                </ul>
             </div>
             </div>
     </div>
@@ -32,45 +39,60 @@
                 <div class="about-me__wrapper">
                     <div class="discriptions">
                         <p class="disc">
-                            Всем привет👋!!! Меня зовут Игорь🥴
+                            Всем привет👋!!! Меня зовут Игорь <br> <br>
                             Я начал свой путь в програмировании с изучения HTML и CSS. На данный момент могу похвалиться парой сайтов. Впереди изучение многих технологий и фреймворков. Все свои скилы буду добавлять сюда, по мере изучения🤓
                         </p>
                     </div>
-                    <div class="foto_shadow">
-                        <img class="my-pfoto" src="./resourses/it's-me.svg" alt="Моя фотогорафия">
-                    </div>
+                    <img class="my-pfoto" src="./resources/it's-me.svg" alt="Моя фотогорафия">
                 </div>
-                <!-- <p class="A-few-details-about-myself">
-                    Приветствую всех читающих мою небольшую биографию 👋 <br> Зовут меня Игорь, мне 37 лет. В этом году решил осуществить свою мечту и стать программистом, так сказать прикоснуться к миру всевозможностей, монящему своей безграничностью!!! Решил собрать все свои работы, на данном этапе обучения не только на Github, но и здесь!
-                </p>
-                <a class="telegram-link" href="https://t.me/Autheios">Telegram</a>
-            </div>
-            <div class="my-works">
-                <div class="container_Website-Metrica">
-                    <a href="https://gavrishinigor.github.io/Website-Metrica/">
-                        <img class="photo-cover" src="./resourses/Metrica.jpg" alt="Сайт метрики">
-                    </a>
-                </div>
-                <div class="container_Portfolio-ORLOV">
-                    <a href="https://gavrishinigor.github.io/Portfolio-ORLOV/">
-                        <img class="photo-cover" src="./resourses/Portfolio.jpeg" alt="Сайт портфолио разрабртчика Саши Орлова">
-                    </a>
-                </div>
-                <div class="container_Metrica-adaptive">
-                    <a href="https://gavrishinigor.github.io/Metrica-adaptive/">
-                        <img class="photo-cover" src="./resourses/Metrica.jpg" alt="Сайт метрики адаптивный">
-                    </a>
-                </div>
-                <div class="container_to-be-continued">
-                    <a href="">
-                        <img class="photo-cover" src="./resourses/to-be-continued.jpeg" alt="Фото 'продолжение следует'">
-                    </a> -->
             </div>
         </div>
+        <section class="gallery" id="gallery">
+            <div class="gallery__wrapper">
+                <div class="container gallery__container">
+                    <h2 class="gallery__title">
+                        мои первые работы
+                    </h2>
+                    <div class="gallery__controls">
+                        <button class="gallery__control_prev">
+                        </button>
+                        <button class="gallery__control_next">
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery__slides">
+                    <div class="gallery__slide metrica-static gallery__slide_active">
+                        <p class="slide__description">
+                            Metrica-static 
+                        </p>
+                        <a class="slide__link" href="https://gavrishinigor.github.io/Website-Metrica/">
+                            Подробнее...
+                        </a>
+                    </div>
+                    <div class="gallery__slide portfolio-orlov">
+                        <p class="slide__description">
+                            Portfolio-Orlov 
+                        </p>
+                        <a class="slide__link" href="https://gavrishinigor.github.io/Portfolio-ORLOV/">
+                            Подробнее...
+                        </a>
+                    </div>
+                    <div class="gallery__slide metrica-adaptive">
+                        <p class="slide__description">
+                            Metrica-adaptive 
+                        </p>
+                        <a class="slide__link" href="https://gavrishinigor.github.io/Metrica-adaptive">
+                            Подробнее...
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     <div class="footer">
         <div class="container">
         </div>
-    </div>    
+    </div>  
+    <script src="./js/gallery.js"></script>  
 </body>
 </html>

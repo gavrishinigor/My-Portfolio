@@ -1,8 +1,7 @@
-html {
-    font-family: 'Indie Flower', cursive;
-    font-family: 'Shantell Sans', cursive;   
+body {
+    font-family: 'Montserrat', sans-serif;  
     font-weight: 400;
-   background-color: #000;
+    background-color: #000;
 }
 
 .container {
@@ -10,107 +9,3 @@ html {
     padding: 0 20px;
     margin: 0 auto;
 }
-
-.header {
-    
-}
-
-/* .header__container {
-    font-size: 30px;
-    text-align: center;
-    width: 1400px;
-    height: 100px;
-    padding-top: 20px;
-} */
-
-/* .main {
-    min-width: 100%;
-    display: flex;
-}
-
-.about-me {
-    width: 350px;
-    margin-top: 25px;
-    margin-right: 25px;
-    margin-left: 25px;
-    border-radius: 15px;
-    background-color: rgb(106, 106, 103);
-    box-shadow: 15px 10px 15px rgb(11, 10, 10);
-}
-
-.my-pfoto {
-    width: 350px;
-    border-radius: 15px;
-}
-
-.A-few-details-about-myself {
-    margin: 3%;
-    font-size: 22px;
-    line-height: 30px;
-    color: #fff;
-}
-
-.telegram-link {
-    width: 100px;
-    height: 25px;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-    line-height: 25px;
-    margin-left: 10px;
-    border-radius: 2px;
-    color: rgb(60, 104, 143);
-    background-color: #fff;
-}
-
-.my-works {
-    width: 1000px;
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-}
-
-.my-works::before {
-    content: "Примеры моих работ";
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    width: 300px;
-    font-size: 30px;
-    line-height: 44px;
-    font-weight: 400;
-    display: block;
-    margin-bottom: 30px;
-    margin-left: 50px;
-}
-
-
-.photo-cover {
-    width:800px;
-    height: 100%;
-    background-position: 50% 50%;
-    border-radius: 15px;
-    box-shadow: 15px 10px 15px rgb(11, 10, 10);
-}
-
-.container_Website-Metrica {
-    background-image: url(../resourses/Metrica.jpg);
-    background-size: cover;
-    margin-left: 50px;
-}
-
-.container_Portfolio-ORLOV {
-    margin-left: 200px;
-}
-
-.container_Metrica-adaptive {
-    margin-left: 50px;
-}
-
-.container_to-be-continued {
-    margin-left: 200px;
-}
-
-.footer__container {
-    width: 1400px;
-    height: 100px;
-} */

@@ -10,16 +10,13 @@
 }
 
 .disc {
-    font-weight: 300;
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: normal;
+    font-weight: 400;
     color: #b4afaf;
 }
 
 .my-pfoto {
     height: 100vh;
-    margin-right: 50px;
-}
-
-p {
-    color: aliceblue;
-    font-size: 32px;
 }

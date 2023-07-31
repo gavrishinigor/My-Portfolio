@@ -1,4 +1,5 @@
 .gallery__wrapper {
+    width: 1440px;
     position: relative;
 }
 
@@ -80,6 +81,7 @@
 }
 
 .gallery__slides {
+    width: inherit;
     height: 717px;
     position: relative;
     margin-bottom: 150px;

@@ -17,6 +17,23 @@
     color: #b4afaf;
 }
 
-.my-pfoto {
-    height: 100vh;
+.about-me__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.descriptions {
+  flex: 1 1 300px;
+  max-width: 600px;
+}
+
+.my-photo {
+  flex: 1 1 300px;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }

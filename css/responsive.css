@@ -1,0 +1,110 @@
+/* Адаптивность для планшетов и ниже */
+@media (max-width: 1024px) {
+  .header__container,
+  .about-me__wrapper,
+  .gallery__container,
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header__nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .gallery__controls {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .gallery__slides {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer__links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 600px) {
+  .logo {
+    max-width: 100px;
+  }
+
+  .disc {
+    font-size: 14px;
+  }
+
+  .gallery__title {
+    font-size: 18px;
+  }
+
+  .footer__text {
+    font-size: 12px;
+  }
+}
+
+/* Адаптивность для очень маленьких экранов (iPhone 12 и подобные) */
+@media (max-width: 400px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .disc {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .gallery__title {
+    font-size: 16px;
+  }
+
+  .slide__description {
+    font-size: 14px;
+  }
+
+  .slide__link {
+    font-size: 14px;
+  }
+
+  .footer__link {
+    font-size: 12px;
+  }
+
+  .header__nav {
+    font-size: 14px;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 320px) {
+  .disc {
+    font-size: 12px;
+  }
+
+  .gallery__title,
+  .slide__description,
+  .slide__link {
+    font-size: 13px;
+  }
+
+  .header__nav {
+    font-size: 13px;
+    gap: 4px;
+  }
+
+  .footer__link {
+    font-size: 11px;
+  }
+
+  .container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}

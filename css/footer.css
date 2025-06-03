@@ -1,0 +1,36 @@
+.footer {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 40px 0;
+  font-size: 14px;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.footer__text {
+  margin: 0;
+  font-weight: 500;
+}
+
+.footer__links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer__link {
+  color: #ffffffcc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer__link:hover {
+  color: #ffffff;
+}

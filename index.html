@@ -1,110 +1,122 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/body.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/about-me.css">
-    <link rel="stylesheet" href="./css/gallery.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
-    <title>Portfolio Gavrishin Igor</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио Гавришина Игоря</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/body.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/mainpage.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="container header__container">
-            <div class="nav__wrapper">
-                <img class="logo" src="./resources/123.jpg" alt="Логотип сайта портфолио">
-                    <nav>
-                        <ul class="header__nav">
-                            <li class="nav__link">
-                                <a href="">Обо мне</a>
-                            </li>
-                                <li class="nav__link">
-                                    <a href="">Мои работы</a>
-                                </li>
-                            <li class="nav__link">
-                                <a href="">Контакты</a>
-                            </li>
-                        </ul>
-                    </nav>
-            </div>
+  <header class="header">
+    <div class="container header__container">
+      <img class="logo" src="./resources/123.jpg" alt="Логотип">
+      <nav>
+        <ul class="header__nav">
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#portfolio">Портфолио</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1>
+            <span class="accent">Современный фронтенд</span><br>
+            <span>для вашего проекта</span>
+          </h1>
+          <p>Создаю удобные и стильные сайты с использованием актуальных технологий.<br>
+            Преобразую сложное в простое, повышаю эффективность.</p>
+          <a class="btn accent" href="#contact">Оставить заявку</a>
         </div>
-    </header>
-    <main class="main">
-        <div class="about-me">
-            <div class="container">
-                <div class="about-me__wrapper">
-                    <div class="descriptions">
-                        <p class="disc">
-                            👋 Привет! Меня зовут Игорь.  <br>  
-                            Я делаю первые шаги в веб-разработке, начиная с изучения HTML и CSS. Уже успел реализовать несколько небольших проектов, и каждый из них приближает меня к цели — стать профессиональным фронтенд-разработчиком.  <br>  
-                            Этот сайт будет расти вместе со мной: по мере освоения новых технологий, фреймворков и инструментов, я буду добавлять сюда свежие работы и улучшать его структуру и функциональность.  <br>  
-                            В ближайшее время сосредоточусь на изучении JavaScript и React — как ключевых технологий современного фронтенда.
-                        </p>
-                    </div>
-                    <img class="my-photo" src="./resources/it's-me.svg" alt="Фотография Игоря">
-                </div>
-            </div>
+        <div class="hero__visual">
+          <!-- SVG waves background -->
+          <svg class="hero__waves" width="500" height="500" viewBox="0 0 600 600">
+            <defs>
+              <linearGradient id="wave-gradient" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#2d2b31"/>
+                <stop offset="100%" stop-color="#18171b"/>
+              </linearGradient>
+            </defs>
+            <path d="M0,150 Q300,250 600,150 Q600,400 0,400 Z"
+                  fill="url(#wave-gradient)" opacity="0.6"/>
+            <path d="M0,200 Q300,300 600,200 Q600,420 0,420 Z"
+                  fill="#ff4520" opacity="0.13"/>
+          </svg>
         </div>
-        <section class="gallery" id="gallery">
-            <div class="gallery__wrapper">
-                <div class="container gallery__container">
-                    <h2 class="gallery__title">
-                        мои первые работы
-                    </h2>
-                    <div class="gallery__controls">
-                        <button class="gallery__control_prev">
-                        </button>
-                        <button class="gallery__control_next">
-                        </button>
-                    </div>
-                </div>
-                <div class="gallery__slides">
-                    <div class="gallery__slide metrica-static gallery__slide_active">
-                        <p class="slide__description">
-                            Metrica-static 
-                        </p>
-                        <a class="slide__link" href="https://gavrishinigor.github.io/Website-Metrica/">
-                            Подробнее...
-                        </a>
-                    </div>
-                    <div class="gallery__slide portfolio-orlov">
-                        <p class="slide__description">
-                            Portfolio-Orlov 
-                        </p>
-                        <a class="slide__link" href="https://gavrishinigor.github.io/Portfolio-ORLOV/">
-                            Подробнее...
-                        </a>
-                    </div>
-                    <div class="gallery__slide metrica-adaptive">
-                        <p class="slide__description">
-                            Metrica-adaptive 
-                        </p>
-                        <a class="slide__link" href="https://gavrishinigor.github.io/Metrica-adaptive">
-                            Подробнее...
-                        </a>
-                    </div>
-                </div>
+      </div>
+    </section>
+
+    <section class="features" id="about">
+      <div class="container">
+        <h2>Почему я?</h2>
+        <div class="features__grid">
+          <div class="feature-card"><span class="arrow">&rarr;</span> Честные сроки</div>
+          <div class="feature-card"><span class="arrow">&rarr;</span> Адаптивная вёрстка</div>
+          <div class="feature-card"><span class="arrow">&rarr;</span> Оптимизация скорости</div>
+          <div class="feature-card"><span class="arrow">&rarr;</span> Поддержка проектов</div>
+          <div class="feature-card"><span class="arrow">&rarr;</span> Современный стек</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2>Портфолио</h2>
+        <div class="portfolio__list">
+          <div class="portfolio__item">
+            <img src="./resources/Metrica.jpg" alt="Проект Metrica">
+            <div class="portfolio__desc">
+              <h3>Metrica-static</h3>
+              <a class="portfolio__btn" href="https://gavrishinigor.github.io/Website-Metrica/" target="_blank">Подробнее</a>
             </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="container footer__content">
-          <p class="footer__text">© 2025 Игорь Гавришин</p>
-          <div class="footer__links">
-            <a href="mailto:gavrishinigor@gmail.com" class="footer__link">gavrishinigor@gmail.com</a>
-            <a href="https://github.com/gavrishinigor" target="_blank" class="footer__link">https://github.com/gavrishinigor</a>
-            <a href="https://www.linkedin.com/in/igor-gavrishin" target="_blank" class="footer__link">LinkedIn</a>
+          </div>
+          <div class="portfolio__item">
+            <img src="./resources/Portfolio.jpeg" alt="Проект Portfolio-Orlov">
+            <div class="portfolio__desc">
+              <h3>Portfolio-Orlov</h3>
+              <a class="portfolio__btn" href="https://gavrishinigor.github.io/Portfolio-ORLOV/" target="_blank">Подробнее</a>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <img src="./resources/Metrica.jpg" alt="Проект Metrica-adaptive">
+            <div class="portfolio__desc">
+              <h3>Metrica-adaptive</h3>
+              <a class="portfolio__btn" href="https://gavrishinigor.github.io/Metrica-adaptive" target="_blank">Подробнее</a>
+            </div>
           </div>
         </div>
-    </footer>  
-    <script src="./js/gallery.js"></script>  
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>Оставить заявку</h2>
+        <form class="contact__form">
+          <input type="text" placeholder="Имя" required>
+          <input type="email" placeholder="E-mail" required>
+          <textarea placeholder="Ваше сообщение" required></textarea>
+          <button type="submit" class="btn accent">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__left">© 2025 Игорь Гавришин</div>
+      <div class="footer__right">
+        <a href="mailto:gavrishinigor@gmail.com">gavrishinigor@gmail.com</a>
+        <a href="https://github.com/gavrishinigor" target="_blank">GitHub</a>
+        <!-- Добавь свои соцсети -->
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

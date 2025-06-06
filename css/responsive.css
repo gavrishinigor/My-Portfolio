@@ -1,4 +1,3 @@
-/* Адаптивность для планшетов и ниже */
 @media (max-width: 1024px) {
   .header__container,
   .about-me__wrapper,
@@ -8,146 +7,132 @@
     align-items: center;
     text-align: center;
   }
-
+  .gallery__slides,
+  .footer__links,
   .header__nav {
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    gap: 12px;
   }
-
-  .gallery__controls {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .gallery__slides {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .footer__links {
-    flex-direction: column;
-    gap: 10px;
+  .gallery__title {
+    margin-left: 0;
+    font-size: 20px;
   }
 }
 
-/* Адаптивность для мобильных */
+@media (max-width: 900px) {
+  .about-me__wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 28px;
+  }
+  .descriptions {
+    max-width: 100%;
+    padding: 0 8px;
+  }
+  .my-photo {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+  .gallery__slides {
+    min-height: 420px;
+    height: auto;
+  }
+  .gallery__container {
+    position: static !important;
+    padding-top: 32px;
+  }
+  .slide__description,
+  .slide__link {
+    position: static !important;
+    margin-top: 20px;
+    left: auto !important;
+    top: auto !important;
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 600px) {
   .logo {
     max-width: 100px;
   }
-
   .disc {
-    font-size: 14px;
-  }
-
-  .gallery__title {
-    font-size: 18px;
-  }
-
-  .footer__text {
-    font-size: 12px;
-  }
-}
-
-/* Адаптивность для очень маленьких экранов (iPhone 12 и подобные) */
-@media (max-width: 400px) {
-  .container {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .disc {
-    font-size: 13px;
-    line-height: 1.5;
-  }
-
-  .gallery__title {
     font-size: 16px;
+    line-height: 1.4;
   }
-
-  .slide__description {
-    font-size: 14px;
+  .gallery__title {
+    font-size: 15px;
+    margin-left: 0;
   }
-
-  .slide__link {
-    font-size: 14px;
-  }
-
+  .footer__text,
   .footer__link {
     font-size: 12px;
   }
-
-  .header__nav {
-    font-size: 14px;
-    gap: 6px;
+  .container {
+    padding: 0 5px;
   }
-}
-
-@media (max-width: 320px) {
-  .disc {
-    font-size: 12px;
+  .footer__content {
+    padding: 20px 10px;
   }
-
-  .gallery__title,
-  .slide__description,
-  .slide__link {
-    font-size: 13px;
+  .footer__links {
+    flex-direction: column;
+    gap: 10px;
   }
-
-  .header__nav {
-    font-size: 13px;
-    gap: 4px;
-  }
-
   .footer__link {
     font-size: 11px;
+    line-height: 1.5;
+    word-break: break-all;
   }
-
-  .container {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-}
-
-@media (max-width: 768px) {
-  .about-me__wrapper {
-    flex-direction: column;
+  .footer {
+    width: 100%;
     text-align: center;
   }
+}
 
-  .descriptions {
-    max-width: 100%;
-    padding: 0 15px;
+@media (max-width: 400px) {
+  .logo {
+    max-width: 60px;
   }
-
-  .gallery__controls {
-    justify-content: center;
-  }
-
-  .gallery__slides {
-    flex-direction: column;
-    align-items: center;
+  .disc {
+    font-size: 13px;
   }
 }
 
-@media (max-width: 480px) {
-  .disc {
-    font-size: 14px;
-    line-height: 1.5;
+@media (max-width: 900px) {
+  header {
+    margin-bottom: 24px;
   }
-
-  .header__nav {
-    font-size: 14px;
-    gap: 6px;
-    flex-direction: column;
-    align-items: center;
+  .about-me {
+    margin-bottom: 36px;
   }
-
-  .gallery__title {
-    font-size: 16px;
+  .gallery {
+    margin-bottom: 36px;
   }
+  .footer {
+    margin-top: 36px;
+  }
+  .container {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
 
-  .footer__link {
-    font-size: 12px;
+@media (max-width: 600px) {
+  header {
+    margin-bottom: 12px;
+  }
+  .about-me {
+    margin-bottom: 20px;
+  }
+  .gallery {
+    margin-bottom: 24px;
+  }
+  .footer {
+    margin-top: 20px;
+  }
+  .container {
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 }

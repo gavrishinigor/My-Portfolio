@@ -35,3 +35,13 @@ function getPrevId() {
 function getNextId() {
     return activeId === (slidesNodes.length - 1) ? 0: activeId + 1;
 }
+
+function toggleMenu() {
+  document.getElementById('nav-menu').classList.toggle('active');
+}
+
+document.querySelectorAll('#nav-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('nav-menu').classList.remove('active');
+  });
+});

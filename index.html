@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Портфолио Гавришина Игоря</title>
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/body.css">
-  <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/mainpage.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -14,7 +12,7 @@
 <body>
   <header class="header">
     <div class="container header__container">
-      <img class="logo" src="./resources/123.jpg" alt="Логотип">
+      <img class="logo" src="./resources/logo.png" alt="Логотип">
       <nav>
         <ul class="header__nav">
           <li><a href="#about">Обо мне</a></li>
@@ -25,37 +23,28 @@
     </div>
   </header>
   <main>
-    <section class="hero">
-      <div class="container hero__container">
-        <div class="hero__content">
-          <h1>
-            <span class="accent">Современный фронтенд</span><br>
-            <span>для вашего проекта</span>
-          </h1>
-          <p>Создаю удобные и стильные сайты с использованием актуальных технологий.<br>
-            Преобразую сложное в простое, повышаю эффективность.</p>
-          <a class="btn accent" href="#contact">Оставить заявку</a>
-        </div>
-        <div class="hero__visual">
-          <!-- SVG waves background -->
-          <svg class="hero__waves" width="500" height="500" viewBox="0 0 600 600">
-            <defs>
-              <linearGradient id="wave-gradient" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#2d2b31"/>
-                <stop offset="100%" stop-color="#18171b"/>
-              </linearGradient>
-            </defs>
-            <path d="M0,150 Q300,250 600,150 Q600,400 0,400 Z"
-                  fill="url(#wave-gradient)" opacity="0.6"/>
-            <path d="M0,200 Q300,300 600,200 Q600,420 0,420 Z"
-                  fill="#ff4520" opacity="0.13"/>
-          </svg>
-        </div>
+      <section class="hero reveal fade-up delay-1">
+    <div class="container hero__container">
+      
+      <div class="hero__text">
+        <h1>
+          <span class="hero__title-accent">Современный фронтенд</span><br>
+          для вашего проекта
+        </h1>
+        <p>Создаю удобные и стильные сайты с использованием актуальных технологий.<br>
+        Преобразую сложное в простое, повышаю эффективность.</p>
+        <a class="hero__button" href="#contact">Оставить заявку</a>
       </div>
-    </section>
 
-    <section class="features" id="about">
-      <div class="container">
+      <div class="hero__image">
+        <img src="./resources/it's-me.svg" alt="Фото Игоря">
+      </div>
+
+    </div>
+  </section>
+
+    <section class="features reveal fade-up delay-2">
+    <div class="container">
         <h2>Почему я?</h2>
         <div class="features__grid">
           <div class="feature-card"><span class="arrow">&rarr;</span> Честные сроки</div>
@@ -63,29 +52,30 @@
           <div class="feature-card"><span class="arrow">&rarr;</span> Оптимизация скорости</div>
           <div class="feature-card"><span class="arrow">&rarr;</span> Поддержка проектов</div>
           <div class="feature-card"><span class="arrow">&rarr;</span> Современный стек</div>
+          <div class="feature-card"><span class="arrow">&rarr;</span> Использование ИИ при разработке</div>
         </div>
       </div>
     </section>
 
-    <section class="portfolio" id="portfolio">
-      <div class="container">
+    <section class="portfolio reveal fade-up delay-3">
+    <div class="container">
         <h2>Портфолио</h2>
         <div class="portfolio__list">
-          <div class="portfolio__item">
+          <div class="portfolio__item reveal fade-up delay-1">
             <img src="./resources/Metrica.jpg" alt="Проект Metrica">
             <div class="portfolio__desc">
               <h3>Metrica-static</h3>
               <a class="portfolio__btn" href="https://gavrishinigor.github.io/Website-Metrica/" target="_blank">Подробнее</a>
             </div>
           </div>
-          <div class="portfolio__item">
+          <div class="portfolio__item reveal fade-up delay-2">
             <img src="./resources/Portfolio.jpeg" alt="Проект Portfolio-Orlov">
             <div class="portfolio__desc">
               <h3>Portfolio-Orlov</h3>
               <a class="portfolio__btn" href="https://gavrishinigor.github.io/Portfolio-ORLOV/" target="_blank">Подробнее</a>
             </div>
           </div>
-          <div class="portfolio__item">
+          <div class="portfolio__item reveal fade-up delay-3">
             <img src="./resources/Metrica.jpg" alt="Проект Metrica-adaptive">
             <div class="portfolio__desc">
               <h3>Metrica-adaptive</h3>
@@ -96,27 +86,43 @@
       </div>
     </section>
 
-    <section class="contact" id="contact">
-      <div class="container">
-        <h2>Оставить заявку</h2>
-        <form class="contact__form">
-          <input type="text" placeholder="Имя" required>
-          <input type="email" placeholder="E-mail" required>
-          <textarea placeholder="Ваше сообщение" required></textarea>
-          <button type="submit" class="btn accent">Отправить</button>
-        </form>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
+    <section class="contact reveal fade-right delay-2" id="contact">
     <div class="container">
-      <div class="footer__left">© 2025 Игорь Гавришин</div>
-      <div class="footer__right">
-        <a href="mailto:gavrishinigor@gmail.com">gavrishinigor@gmail.com</a>
-        <a href="https://github.com/gavrishinigor" target="_blank">GitHub</a>
-        <!-- Добавь свои соцсети -->
-      </div>
+      <h2>Оставить заявку</h2>
+      <form class="contact__form">
+        <input type="text" placeholder="Имя" required>
+        <input type="email" placeholder="E-mail" required>
+        <textarea placeholder="Ваше сообщение" required></textarea>
+        <button type="submit" class="btn accent">Отправить</button>
+      </form>
     </div>
-  </footer>
+  </section>
+  </main>
+  <footer class="footer reveal fade-up delay-4">
+  <div class="container">
+    <div class="footer__left">© 2025 Игорь Гавришин</div>
+    <div class="footer__right">
+      <a href="mailto:gavrishinigor@gmail.com">gavrishinigor@gmail.com</a>
+      <a href="https://github.com/gavrishinigor" target="_blank">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+
+  function revealOnScroll() {
+    const windowHeight = window.innerHeight;
+    reveals.forEach(el => {
+      const revealTop = el.getBoundingClientRect().top;
+      if (revealTop < windowHeight) {
+        el.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+</script>
 </body>
 </html>

@@ -1,0 +1,32 @@
+# Системные файлы macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Node
+node_modules/
+
+# Бэкапы редакторов
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# VS Code
+.vscode/
+.history/
+.idea/
+
+# Сборки (если вдруг подключишь Webpack, Parcel и т.п.)
+dist/
+build/
+
+# Старые версии
+__MACOSX/
+old/
+backup/
